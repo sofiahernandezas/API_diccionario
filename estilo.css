@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.resultado {
+    font-size: 18px;
+    color: #333;
+}
+
+@keyframes moveAndColor {
+    0% {
+        transform: translateX(0);
+        color: red;
+    }
+    25% {
+        transform: translateX(10px);
+        color: orange;
+    }
+    50% {
+        transform: translateX(-10px);
+        color: yellow;
+    }
+    75% {
+        transform: translateX(10px);
+        color: green;
+    }
+    100% {
+        transform: translateX(0);
+        color: blue;
+    }
+}
+
+.lead {
+    animation: moveAndColor 2s infinite;
+    font-weight: bold;
+    font-size: 1.5rem; /* Slightly larger text */
+}
+ul {
+    list-style-type: none; /* Elimina los puntos */
+    padding: 0; /* Opcional: elimina el espacio de la izquierda */
+    margin: 0; /* Opcional: elimina el margen alrededor */
+  }
